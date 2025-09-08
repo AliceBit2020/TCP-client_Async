@@ -65,6 +65,7 @@ namespace TCP_client
             {
                 try
                 {
+                    ////
                     string theMessage = textBox1.Text; // получим текст сообщения, введенный в текстовое поле
                     byte[] msg = Encoding.Default.GetBytes(theMessage); // конвертируем строку, содержащую сообщение, в массив байтов
                     int bytesSent = sock.Send(msg); // отправляем серверу сообщение через сокет
